@@ -10,7 +10,7 @@ final class ArraysTest extends TestCase
     {
         // Consigue la frase esperada utilizando índices del array y concatenación
         $seasons = ["Primavera", "Verano", "Otoño,", "Invierno"]; 
-        $phrase = '';
+        $phrase = "La estación que más me gusta es el $seasons[1] y la que menos es el $seasons[3]";
         
         $expectedPhrase = "La estación que más me gusta es el Verano y la que menos es el Invierno";
         assertEquals($expectedPhrase, $phrase);

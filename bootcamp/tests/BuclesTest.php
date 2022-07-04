@@ -117,8 +117,6 @@ final class BuclesTest extends TestCase
         $employees[$index]['email'] = $newEmail;
       }
 
-      
-
       assertEquals('carlos@miempresa.com', $employees[0]['email']);
       assertEquals('carolina@miempresa.com', $employees[3]['email']);
     }

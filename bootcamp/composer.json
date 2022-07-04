@@ -1,0 +1,13 @@
+{
+    "name": "jose/bootcamp",
+    "authors": [
+        {
+            "name": "jcovian",
+            "email": "jose@covian.es"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

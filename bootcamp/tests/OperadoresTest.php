@@ -15,7 +15,7 @@ final class OperadoresTest extends TestCase
     {
         $name = 'Carlos';
         $lastNames = 'Herrera Conejero';
-        $result = '';
+        $result = "$lastNames, $name";
 
         $expectedResult = 'Herrera Conejero, Carlos';
         assertEquals($expectedResult, $result);

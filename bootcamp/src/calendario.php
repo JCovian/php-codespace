@@ -35,21 +35,24 @@ function spanishDaysOfTheWeek($dayOfTheWeek) {
 $day = date('l');
 $dayInSpanish = spanishDaysOfTheWeek($day);
 
-print_r($GLOBALS);
+//print_r($GLOBALS);
+//print_r($_SESSION);
+$persona = $_GET['name'];
 ?>
 
 <html>
 <head>
 <title>Test Exercise</title>
-<link rel="stylesheet" href="main.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
+<div class="container">
+    <?php require_once 'mimenu.php'; ?>
 
-<?php require_once 'menu.php'; ?>
+    <h1>Hola, <?php echo $persona ?></h1>
+    <p>Hoy es <strong><?php echo $dayInSpanish; ?></strong>. ¿Qué tal estás?</p>
+</div>
 
-
-<h1>Hola, Carlos</h1>
-<p>Hoy es <strong><?php echo $dayInSpanish; ?></strong>. ¿Qué tal estás?</p>
 </body>
 </html>

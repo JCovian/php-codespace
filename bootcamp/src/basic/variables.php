@@ -1,4 +1,13 @@
-hola
+<html>
+  <head>
+    <script src="text/javascript">./mijs.js</script>
+  </head>
+  <body>
+    <h1 class="h12" style="color:red">Bootcamp Fullstack</h1>
+    <p>Hola, <?php $name = "Jose";  print_r($name); ?></p>
+    <hr>
+  </body>
+</html>
 
 <?php
 
@@ -22,5 +31,9 @@ $array_asociativo = [
   'email' => 'carlos@correo.com',
   'ciudad' => 'Málaga'
 ];
+
+echo $array_asociativo['telefono'];
+echo $float;
+print_r($array_asociativo);
 
 ?>

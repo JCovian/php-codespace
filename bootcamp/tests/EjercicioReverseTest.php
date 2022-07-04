@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 use function PHPUnit\Framework\assertEquals;
 
-require_once('./bootcamp/src/ejercicios.php');
+require_once('./src/ejerciciosmio.php');
 
 final class EjercicioReverseTest extends TestCase
 {
